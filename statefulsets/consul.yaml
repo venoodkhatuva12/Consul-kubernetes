@@ -45,7 +45,7 @@ spec:
             - "-advertise=$(POD_IP)"
             - "-bind=0.0.0.0"
             - "-bootstrap-expect=1"
-            - "-retry-join=consul-0.consul.$(NAMESPACE).svc.oasiskube-dev.wkelms.com"
+            - "-retry-join=consul-0.consul.$(NAMESPACE).svc.cluster.local"
             - "-client=0.0.0.0"
             - "-config-file=/etc/consul/config/server.json"
             - "-datacenter=dc1"
